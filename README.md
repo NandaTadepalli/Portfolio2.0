@@ -1,8 +1,4 @@
 # Portfolio2.0
-
-![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)  
-*This is a preview of my fully responsive portfolio website!*
-
 Welcome to the **final** version of my personal portfolio website!  
 This project showcases my journey in web development and is built to be **fully responsive** — meaning you can enjoy it on any device, be it **desktop**, **tablet**, or **smartphone**! 🖥️📱
 
@@ -28,3 +24,6 @@ If you want to clone and run this project locally, follow these steps:
    Run the following command in your terminal:
    ```bash
    git clone https://github.com/NandaTadepalli/Portfolio2.0.git
+
+![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)  
+*This is a preview of my fully responsive portfolio website!*
