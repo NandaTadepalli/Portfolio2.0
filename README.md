@@ -24,6 +24,5 @@ If you want to clone and run this project locally, follow these steps:
    Run the following command in your terminal:
    ```bash
    git clone https://github.com/NandaTadepalli/Portfolio2.0.git
-
-![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)  
 *This is a preview of my fully responsive portfolio website!*
+![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)  
