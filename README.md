@@ -1,6 +1,6 @@
 # Portfolio2.0
 
-![Portfolio Preview](./assets/website-preview.png)  
+![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)  
 *This is a preview of my fully responsive portfolio website!*
 
 Welcome to the **final** version of my personal portfolio website!  
