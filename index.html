@@ -1,466 +1,573 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="icon" type="image/x-icon" href="media/profile gif2.gif">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanda Tadepalli | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Nanda Tadepalli featuring projects, skills, certifications, and contact details.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="media/profile gif2.gif">
 </head>
 
-
 <body>
-  <div class="nav">
-    <ul class="navbar">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#AboutMe">About Me</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-    </ul>
-  </div>
+    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+    <div class="mouse-glow" aria-hidden="true"></div>
 
-  <div id="home" class="container">
-    <div>
+    <header class="site-header">
+        <nav class="nav shell" aria-label="Main navigation">
+            <a href="#home" class="brand">Nanda Tadepalli.</a>
+            <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </div>
-    <span class="text1">Nanda Tadepalli</span>
-    <span class="text2">Welcome here</span>
-  </div>
+    <main>
+        <section id="home" class="hero shell scroll-reveal">
+            <div class="hero-grid">
+                <div>
+                    <p class="status-pill">Open to internships and collaborations</p>
+                    <p class="eyebrow">AI and Data Science Student</p>
+                    <h1>Nanda Tadepalli</h1>
+                    <p class="hero-subtitle">I craft immersive web experiences and data-driven products that feel sharp,
+                        fast, and alive on every screen.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary magnetic">Explore My Work</a>
+                        <a href="#contact" class="btn btn-ghost magnetic">Build With Me</a>
+                    </div>
+                    <ul class="hero-metrics" aria-label="Quick profile highlights">
+                        <li><strong>9.65</strong> CGPA</li>
+                        <li><strong>4th Year</strong> B.Tech AI and DS</li>
+                        <li><strong>5+</strong> Core Skills</li>
+                    </ul>
+                    <div class="hero-tags" aria-label="Tech stack highlights">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Cloud</span>
+                        <span>Frontend</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Profile showcase">
+                    <img src="media/IMG_20240830_133943.jpg" alt="Portrait of Tadepalli Nanda">
+                    <div class="hero-card-overlay">
+                        <p>Creative Engineer</p>
+                        <h3>Design + Logic + Impact</h3>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-  <section id="projects" class="scroll-reveal">
-    <h2 style="text-align: center; font-size: 36px; color: #fff; margin-bottom: 40px;">Projects</h2>
+        <section class="ticker" aria-label="Highlights">
+            <div class="ticker-track">
+                <span>Hackathon-ready mindset</span>
+                <span>Performance-first interfaces</span>
+                <span>Cloud-aware development</span>
+                <span>Clean and scalable code</span>
+                <span>Hackathon-ready mindset</span>
+                <span>Performance-first interfaces</span>
+                <span>Cloud-aware development</span>
+                <span>Clean and scalable code</span>
+            </div>
+        </section>
 
-    <!-- Project Cards -->
-    <div class="timeline">
-      <div class="project-card">
-        <img src="media/Screenshot 2025-01-11 142434.png" alt="Project 1 Image" class="project-image">
-        <div class="project-info">
-          <h3 class="project-title">Club Website</h3>
-          <p class="project-description">A team project for a club website featuring event registration and a resource
-            page where club members write about web development and many more.</p>
-          <div class="button-container">
-            <button class="preview-btn" onclick="location.href='https://klef.websico.in/members/'" target="_blank">
-              Preview</button>
-          </div>
-        </div>
-      </div>
-      <!-- Add more project cards as needed -->
-      <div class="project-card">
-        <img src="media/Screenshot 2025-01-11 142145.png" alt="Project 1 Image" class="project-image">
-        <div class="project-info">
-          <h3 class="project-title">Portfolio Website</h3>
-          <p class="project-description">A personal portfolio website showcasing my projects, skills, and achievements.
-            It includes interactive elements and a modern design.</p>
-          <div class="button-container">
-            <button class="preview-btn"
-              onclick="openPopup('https://nandatadepalli.github.io/Portfolio2.0/')">Preview</button>
-            <a href="https://github.com/your-github-repo" target="_blank" class="github-icon">
-              <i class="fab fa-github"></i> <!-- GitHub icon from Font Awesome -->
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="media/file_2025-01-11_09.30.27.png" alt="Project 1 Image" class="project-image">
-        <div class="project-info">
-          <h3 class="project-title">HoD's Dashboard</h3>
-          <p class="project-description">This is a dashboard designed for the Head of the Department to monitor the
-            status of every student in one place. It was developed as a team project.<br><br><b>Can't preview this because of sensitive content</b></p>
-        </div>
-      </div>
-    </div>
+        <section id="projects" class="section shell scroll-reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="timeline">
+                <article class="project-card scroll-reveal">
+                    <img src="media/Screenshot 2025-01-11 142434.png" alt="Club website project preview"
+                        class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Club Website</h3>
+                        <p class="project-description">A team project featuring event registration and a resource page
+                            where members publish web development content.</p>
+                        <div class="button-container">
+                            <a class="preview-btn" href="https://klef.websico.in/members/" target="_blank"
+                                rel="noopener noreferrer"><i class="fas fa-up-right-from-square"></i><span>Preview</span></a>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- Popup -->
-    <div id="popup" class="popup">
-      <div class="popup-content">
-        <button class="close-btn" onclick="closePopup()">✕</button>
-        <div class="iframe-wrapper">
-          <iframe id="project-iframe" src="" frameborder="0"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
+                <article class="project-card scroll-reveal">
+                    <img src="media/Screenshot 2025-01-11 142145.png" alt="Portfolio website project preview"
+                        class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">A personal portfolio website showcasing projects, skills, and
+                            achievements with interactive UI components.</p>
+                        <div class="button-container">
+                            <button class="preview-btn"
+                                onclick="openPopup('https://nandatadepalli.github.io/Portfolio2.0/')"><i
+                                    class="fas fa-display"></i><span>Preview</span></button>
+                            <a href="https://github.com/NandaTadepalli/Portfolio2.0" target="_blank"
+                                rel="noopener noreferrer" class="preview-btn btn-github"
+                                aria-label="View source on GitHub"><i class="fab fa-github"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="project-card scroll-reveal">
+                    <img src="media/file_2025-01-11_09.30.27.png" alt="HoD dashboard project preview"
+                        class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">HoD's Dashboard</h3>
+                        <p class="project-description">A team dashboard for department-level student monitoring and
+                            management.<br><br><strong>Preview unavailable due to sensitive content.</strong></p>
+                    </div>
+                </article>
 
-  <h2 style="text-align: center; font-size:36px;"> Skills</h2>
-  <section id="skills" class="scroll-reveal">
-    <div class="ag-format-container">
-      <div class="ag-courses_box">
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
+                <article class="project-card scroll-reveal">
+                    <img src="media/vehicle-classification.png" alt="Vehicle Classification System preview" class="project-image">
+    
+                    <div class="project-info">
+                        <h3 class="project-title">Vehicle Classification System</h3>
+                        <p class="project-description">A modern Flask-based vehicle classification platform using deep
+                            learning models (Vision Transformer, CNN, ResNet). Users upload images for instant
+                            classification into car, bike, bus, van, and more. Built for scalability and cloud
+                            deployment.</p>
+                        <p class="project-description"><strong>Highlights:</strong> secure image storage, responsive UI,
+                            AWS EC2 deployment, and extendability for number plate recognition, smart toll systems,
+                            traffic monitoring, and edge AI.</p>
+                        <div class="project-tags" aria-label="Vehicle classification tech stack">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>PyTorch</span>
+                            <span>Transformers</span>
+                            <span>AWS EC2</span>
+                        </div>
+                        <div class="button-container">
+                            <a class="preview-btn" href="https://github.com/NandaTadepalli/Vehicle-classification"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="ag-courses-item_title">
-              Python :
-              Certified in IBM Python
+                <article class="project-card scroll-reveal">
+                    <img src="media/grievance-platform.png" alt="Grievance Platform preview" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Grievance Platform</h3>
+                        <p class="project-description">A secure, modern platform for university departments to manage
+                            student and staff grievances with role-based access for students, faculty, and admins.</p>
+                        <p class="project-description"><strong>Highlights:</strong> threaded real-time conversations,
+                            anonymous complaints, ticket-based tracking, analytics dashboards, faculty workload insights,
+                            shared issue clustering, and broadcast updates.</p>
+                        <div class="project-tags" aria-label="Grievance platform tech stack">
+                            <span>Next.js 16</span>
+                            <span>React 19</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Firebase</span>
+                            <span>Vercel</span>
+                        </div>
+                        <div class="button-container">
+                            <a class="preview-btn" href="https://github.com/NandaTadepalli/grievance-platform"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card scroll-reveal">
+                    <div class="project-image project-image--placeholder project-image--exam" role="img"
+                        aria-label="Exam seating arrangement AI project visual">
+                        <span>Exam Seating AI</span>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Exam Seating Arrangement using AI</h3>
+                        <p class="project-description">A Django web application for managing exam seating,
+                            invigilation duties, attendance, and malpractice reporting with dedicated admin, faculty,
+                            and student portals.</p>
+                        <p class="project-description"><strong>Highlights:</strong> custom role-based user model,
+                            faculty schedules and notifications, attendance workflows, malpractice reporting, profile
+                            management, and MySQL integration.</p>
+                        <div class="project-tags" aria-label="Exam seating project tech stack">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="button-container">
+                            <a class="preview-btn"
+                                href="https://github.com/NandaTadepalli/Exam_seating_Arrangement_using_AI"
+                                target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>GitHub</span></a>
+                        </div>
+                    </div>
+                </article>
             </div>
 
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
+            <div id="popup" class="popup" role="dialog" aria-modal="true" aria-label="Project preview popup">
+                <div class="popup-content">
+                    <button class="close-btn" onclick="closePopup()" aria-label="Close popup">x</button>
+                    <div class="iframe-wrapper">
+                        <iframe id="project-iframe" src="" title="Project preview"></iframe>
+                    </div>
+                </div>
             </div>
-          </a>
-        </div>
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
+        </section>
 
-            <div class="ag-courses-item_title">
-              AWS Cloud: <br>Certified AWS cloud Practionior
+        <section id="skills" class="section shell scroll-reveal">
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Core stack engineered for real-world AI products, cloud deployment, and
+                scalable web systems.</p>
+            <div class="skills-grid skills-grid--futuristic">
+                <article class="skill-card skill-card--tech">
+                    <div class="skill-top">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <p>Certified in IBM Python with hands-on AI and backend implementation experience.</p>
+                    <div class="skill-meter" aria-hidden="true"><span style="--level: 95%"></span></div>
+                    <span class="skill-meta">Since 04.11.2022</span>
+                </article>
+                <article class="skill-card skill-card--tech">
+                    <div class="skill-top">
+                        <i class="fas fa-cloud" aria-hidden="true"></i>
+                        <h3>AWS Cloud</h3>
+                    </div>
+                    <p>Certified AWS Cloud Practitioner with deployment-focused cloud fundamentals.</p>
+                    <div class="skill-meter" aria-hidden="true"><span style="--level: 88%"></span></div>
+                    <span class="skill-meta">Since 04.11.2022</span>
+                </article>
+                <article class="skill-card skill-card--tech">
+                    <div class="skill-top">
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <p>Modern interfaces with clean structure, expressive motion, and responsive behavior.</p>
+                    <div class="skill-meter" aria-hidden="true"><span style="--level: 86%"></span></div>
+                    <span class="skill-meta">Hands-on projects</span>
+                </article>
+                <article class="skill-card skill-card--tech">
+                    <div class="skill-top">
+                        <i class="fas fa-database" aria-hidden="true"></i>
+                        <h3>SQL</h3>
+                    </div>
+                    <p>MySQL and PostgreSQL with practical relational modeling and query optimization.</p>
+                    <div class="skill-meter" aria-hidden="true"><span style="--level: 84%"></span></div>
+                    <span class="skill-meta">Relational data modeling</span>
+                </article>
+                <article class="skill-card skill-card--tech">
+                    <div class="skill-top">
+                        <i class="fab fa-java" aria-hidden="true"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <p>Core Java and OOP foundations strengthened through coding and DSA practice.</p>
+                    <div class="skill-meter" aria-hidden="true"><span style="--level: 76%"></span></div>
+                    <span class="skill-meta">Problem-solving practice</span>
+                </article>
             </div>
+        </section>
 
-            <div class="ag-courses-item_date-box">
-              Start:
-              <span class="ag-courses-item_date">
-                04.11.2022
-              </span>
+        <section id="certifications" class="section shell scroll-reveal">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Verified credentials that validate platform skills across cloud,
+                development, and programming domains.</p>
+            <div class="certifications-grid certifications-grid--holo">
+                <article class="card cert-card">
+                    <figure class="card-image">
+                        <img src="media/Screenshot 2024-06-28 144620.png" alt="AWS Cloud Practitioner certificate">
+                        <span class="cert-chip">Cloud</span>
+                    </figure>
+                    <div class="card-header">
+                        <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/1e2ad5d636e8490f981a8cda07dd16ac"
+                            target="_blank" rel="noopener noreferrer">AWS Cloud Practitioner Certificate</a>
+                        <button class="icon-button" aria-label="Certificate highlight">
+                            <i class="fas fa-award"></i>
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-meta"><i class="far fa-calendar"></i> June 15, 2024</div>
+                        <a class="cert-link"
+                            href="https://cp.certmetrics.com/amazon/en/public/verify/credential/1e2ad5d636e8490f981a8cda07dd16ac"
+                            target="_blank" rel="noopener noreferrer"><i class="fas fa-circle-check"></i><span>Verify</span></a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <figure class="card-image">
+                        <img src="media/Screenshot 2024-06-25 183801.png"
+                            alt="Oracle Cloud Infrastructure Architect Associate certificate">
+                        <span class="cert-chip">Oracle</span>
+                    </figure>
+                    <div class="card-header">
+                        <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C262BEF4F965939FBAAA1A7E5AEC6A5D7FED3A2E5A415967FC7E3546C5A64C5F"
+                            target="_blank" rel="noopener noreferrer">Oracle Cloud Infrastructure 2023 Architect
+                            Associate</a>
+                        <button class="icon-button" aria-label="Certificate highlight">
+                            <i class="fas fa-award"></i>
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-meta"><i class="far fa-calendar"></i> Sep 07, 2023</div>
+                        <a class="cert-link"
+                            href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C262BEF4F965939FBAAA1A7E5AEC6A5D7FED3A2E5A415967FC7E3546C5A64C5F"
+                            target="_blank" rel="noopener noreferrer"><i class="fas fa-circle-check"></i><span>Verify</span></a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <figure class="card-image">
+                        <img src="media/Screenshot 2024-06-28 150556.png" alt="IBM Python certificate">
+                        <span class="cert-chip">Python</span>
+                    </figure>
+                    <div class="card-header">
+                        <a href="https://courses.etrain.skillsnetwork.site/certificates/b68e6173a8854189bfe8765fdb4f7b36"
+                            target="_blank" rel="noopener noreferrer">IBM Python Certificate</a>
+                        <button class="icon-button" aria-label="Certificate highlight">
+                            <i class="fas fa-award"></i>
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-meta"><i class="far fa-calendar"></i> Jan 03, 2024</div>
+                        <a class="cert-link"
+                            href="https://courses.etrain.skillsnetwork.site/certificates/b68e6173a8854189bfe8765fdb4f7b36"
+                            target="_blank" rel="noopener noreferrer"><i class="fas fa-circle-check"></i><span>Verify</span></a>
+                    </div>
+                </article>
+
+                <article class="card cert-card">
+                    <figure class="card-image">
+                        <img src="media/Screenshot 2024-06-28 150817.png" alt="HackerRank Python certificate">
+                        <span class="cert-chip">HackerRank</span>
+                    </figure>
+                    <div class="card-header">
+                        <a href="https://www.hackerrank.com/certificates/0ae33b0dfebf" target="_blank"
+                            rel="noopener noreferrer">HackerRank Python (Basics)</a>
+                        <button class="icon-button" aria-label="Certificate highlight">
+                            <i class="fas fa-award"></i>
+                        </button>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-meta"><i class="far fa-calendar"></i> Jun 17, 2024</div>
+                        <a class="cert-link" href="https://www.hackerrank.com/certificates/0ae33b0dfebf" target="_blank"
+                            rel="noopener noreferrer"><i class="fas fa-circle-check"></i><span>Verify</span></a>
+                    </div>
+                </article>
             </div>
-          </a>
-        </div>
+        </section>
 
+        <section id="about" class="section shell scroll-reveal">
+            <h2 class="section-title">About Me</h2>
+            <article class="about-card about-card--innovation">
+                <div class="about-content">
+                    <p class="eyebrow">Who I Am</p>
+                    <h3>Building Intelligent Products with Design-First Thinking</h3>
+                    <p class="about-lead">I am a 4th-year B.Tech AI and Data Science student at KL University with a
+                        9.65 CGPA. I blend analytical depth with visual craftsmanship to build web experiences and
+                        practical AI solutions that feel modern, fast, and useful.</p>
 
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
+                    <div class="about-points">
+                        <article class="about-point">
+                            <i class="fas fa-brain" aria-hidden="true"></i>
+                            <div>
+                                <h4>AI + Product Execution</h4>
+                                <p>From model experimentation to deployment-ready implementation.</p>
+                            </div>
+                        </article>
+                        <article class="about-point">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <div>
+                                <h4>Engineering Discipline</h4>
+                                <p>Strong foundations in Python, Java, DSA, and scalable web development.</p>
+                            </div>
+                        </article>
+                        <article class="about-point">
+                            <i class="fas fa-bolt" aria-hidden="true"></i>
+                            <div>
+                                <h4>Hackathon Mindset</h4>
+                                <p>Rapid prototyping with high ownership, iteration speed, and impact focus.</p>
+                            </div>
+                        </article>
+                    </div>
 
-            <div class="ag-courses-item_title">
-              Frount End :<br>HTML and CSS
+                    <div class="about-badges" aria-label="About highlights">
+                        <span>AI and DS</span>
+                        <span>Cloud Ready</span>
+                        <span>UI Engineering</span>
+                        <span>Problem Solver</span>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <figure class="about-portrait">
+                        <img src="media/IMG_20240830_133943.jpg" alt="Portrait of Tadepalli Nanda">
+                    </figure>
+                    <article class="about-floating-card about-floating-card--one" aria-label="Academic score">
+                        <p>CGPA</p>
+                        <strong>9.65</strong>
+                    </article>
+                    <article class="about-floating-card about-floating-card--two" aria-label="Degree status">
+                        <p>Current Year</p>
+                        <strong>4th Year</strong>
+                    </article>
+                    <article class="about-floating-card about-floating-card--three" aria-label="Core stack breadth">
+                        <p>Core Stack</p>
+                        <strong>5+ Skills</strong>
+                    </article>
+                    <article class="about-floating-card about-floating-card--four" aria-label="Primary focus area">
+                        <p>Focus</p>
+                        <strong>DSA + ML</strong>
+                    </article>
+                    <article class="about-floating-card about-floating-card--five" aria-label="Build pace">
+                        <p>Build Pace</p>
+                        <strong>Rapid</strong>
+                    </article>
+                    <span class="about-spark about-spark--one" aria-hidden="true"></span>
+                    <span class="about-spark about-spark--two" aria-hidden="true"></span>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" class="section shell scroll-reveal">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="contact-card">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-shell">
+            <p class="footer-title">Let's Build Something Exceptional</p>
+            <p class="footer-subtitle">Connect with me for collaborations, internships, and innovative product ideas.</p>
+            <div class="social-media">
+                <a href="https://github.com/NandaTadepalli" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i><span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/nanda-tadepalli/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/tadepallinanda/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
+                </a>
             </div>
-          </a>
+            <p class="footer-copy">&copy; <span id="year"></span> Nanda Tadepalli. All Rights Reserved.</p>
         </div>
+    </footer>
 
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("NNXchEqX7137qtety");
+        })();
 
-            <div class="ag-courses-item_title">
-              SQL: <br>MySQL,PostgreSQL
-            </div>
-          </a>
-        </div>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-        <div class="ag-courses_item">
-          <a href="#" class="ag-courses-item_link">
-            <div class="ag-courses-item_bg"></div>
-
-            <div class="ag-courses-item_title">
-              JAVA (Basics)
-            </div>
-          </a>
-        </div>
-
-  </section>
-  <h2 style="text-align: center; font-size:36px; padding-bottom:15px; margin-bottom:15px;">Certifications</h2>
-  <section id="certifications" class="certifications" class="scroll-reveal">
-    <div class="card-list">
-      <article class="card">
-        <figure class="card-image">
-          <img src="media\Screenshot 2024-06-28 144620.png"
-            alt="An orange painted blue, cut in half laying on a blue background" />
-        </figure>
-        <div class="card-header">
-          <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/1e2ad5d636e8490f981a8cda07dd16ac"
-            target="_blank">AWS Cloud Practionior certificate</a>
-          <button class="icon-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Heart">
-              <path
-                d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
-            </svg>
-
-          </button>
-        </div>
-        <div class="card-footer">
-          <div class="card-meta card-meta--views">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="EyeOpen">
-              <path
-                d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-            12
-          </div>
-          <div class="card-meta card-meta--date">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Calendar">
-              <rect x="2" y="4" width="20" height="18" rx="4" />
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <path d="M2 10h20" />
-            </svg>
-            June 15, 2024
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="card-list">
-      <article class="card">
-        <figure class="card-image">
-          <img src="media\Screenshot 2024-06-25 183801.png" />
-        </figure>
-        <div class="card-header">
-          <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=C262BEF4F965939FBAAA1A7E5AEC6A5D7FED3A2E5A415967FC7E3546C5A64C5F"
-            target="_blank">Oracle Cloud Infrastructure 2023 Certified Architect
-            Associate
-            <br>
-            <br>
-            <br>
-          </a>
-          <button class="icon-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Heart">
-              <path
-                d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
-            </svg>
-
-          </button>
-        </div>
-        <div class="card-footer">
-          <div class="card-meta card-meta--views">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="EyeOpen">
-              <path
-                d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-            12
-          </div>
-          <div class="card-meta card-meta--date">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Calendar">
-              <rect x="2" y="4" width="20" height="18" rx="4" />
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <path d="M2 10h20" />
-            </svg>
-            Sep 07, 2023
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="card-list">
-      <article class="card">
-        <figure class="card-image">
-          <img src="media\Screenshot 2024-06-28 150556.png"
-            alt="An orange painted blue, cut in half laying on a blue background" />
-        </figure>
-        <div class="card-header">
-          <a href="https://courses.etrain.skillsnetwork.site/certificates/b68e6173a8854189bfe8765fdb4f7b36"
-            target="_blank">IBM Python</a>
-          <button class="icon-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Heart">
-              <path
-                d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
-            </svg>
-
-          </button>
-        </div>
-        <div class="card-footer">
-          <div class="card-meta card-meta--views">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="EyeOpen">
-              <path
-                d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-            12
-          </div>
-          <div class="card-meta card-meta--date">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Calendar">
-              <rect x="2" y="4" width="20" height="18" rx="4" />
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <path d="M2 10h20" />
-            </svg>
-            Jan 03, 2024
-          </div>
-        </div>
-      </article>
-    </div>
-    <div class="card-list">
-      <article class="card">
-        <figure class="card-image">
-          <img src="media\Screenshot 2024-06-28 150817.png"
-            alt="An orange painted blue, cut in half laying on a blue background" />
-        </figure>
-        <div class="card-header">
-          <a href="https://www.hackerrank.com/certificates/0ae33b0dfebf" target="_blank">Hackerank Python (Basics)</a>
-          <button class="icon-button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Heart">
-              <path
-                d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.125 15.395 22 10.157 22 7.95 22 5.216 19.761 3 17 3s-5 3-5 3-2.239-3-5-3z" />
-            </svg>
-
-          </button>
-        </div>
-        <div class="card-footer">
-          <div class="card-meta card-meta--views">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="EyeOpen">
-              <path
-                d="M21.257 10.962c.474.62.474 1.457 0 2.076C19.764 14.987 16.182 19 12 19c-4.182 0-7.764-4.013-9.257-5.962a1.692 1.692 0 0 1 0-2.076C4.236 9.013 7.818 5 12 5c4.182 0 7.764 4.013 9.257 5.962z" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-            12
-          </div>
-          <div class="card-meta card-meta--date">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" display="block"
-              id="Calendar">
-              <rect x="2" y="4" width="20" height="18" rx="4" />
-              <path d="M8 2v4" />
-              <path d="M16 2v4" />
-              <path d="M2 10h20" />
-            </svg>
-            Jun 17, 2024
-          </div>
-        </div>
-      </article>
-    </div>
-
-
-
-
-
-  </section>
-  <h2 style="text-align: center; font-size:36px;"> About Me</h2>
-  <div id="AboutMe" class="cardA" class="scroll-reveal">
-    <div class="cardAA">
-      <div class="text-section">
-        <p>Hi, I'm</p>
-        <h1>Tadepalli Nanda</h1>
-        <p>I am a 3rd-year B.Tech student in AI and Data Science at KL University with a 9.7 CGPA. I have experience in
-          Python, Java, HTML, and CSS, and I participate in hackathons. Currently, I am focusing on Data Structures and
-          Algorithms (DSA) and have projects on my GitHub. I am committed to learning and eager to join innovative tech
-          projects.</p>
-      </div>
-      <div class="image-section">
-        <img src="media/IMG_20240830_133943.jpg" alt="" width="115%" height="120%">
-      </div>
-    </div>
-  </div>
-
-  <section id="contact" class="scroll-reveal">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
-  <div class="con">
-    <div class="social-media">
-      <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-  </div>
-
-
-
-  <footer>
-    <!-- <div class="social-media">
-      <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-    </div> -->
-
-
-    <p>&copy; 2024 Nanda Tadepalli. All Rights Reserved.</p>
-
-  </footer>
-
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init('NNXchEqX7137qtety');
-    })();
-
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      emailjs.sendForm('service_5lbnch8', 'template_zfwtnle', this)
-        .then(function () {
-          alert('Message sent successfully!');
-        }, function (error) {
-          alert('Failed to send message: ' + JSON.stringify(error));
+            emailjs.sendForm("service_5lbnch8", "template_zfwtnle", this)
+                .then(function () {
+                    alert("Message sent successfully!");
+                }, function (error) {
+                    alert("Failed to send message: " + JSON.stringify(error));
+                });
         });
-    });
-    function openPopup(url) {
-      const popup = document.getElementById('popup');
-      const iframe = document.getElementById('project-iframe');
 
-      // Set the iframe source
-      iframe.src = url;
+        function openPopup(url) {
+            const popup = document.getElementById("popup");
+            const iframe = document.getElementById("project-iframe");
+            iframe.src = url;
+            popup.style.display = "flex";
+        }
 
-      // Show the popup
-      popup.style.display = 'flex';
-    }
+        function closePopup() {
+            const popup = document.getElementById("popup");
+            const iframe = document.getElementById("project-iframe");
+            popup.style.display = "none";
+            iframe.src = "";
+        }
 
-    function closePopup() {
-      const popup = document.getElementById('popup');
-      const iframe = document.getElementById('project-iframe');
+        document.addEventListener("DOMContentLoaded", function () {
+            const mouseGlow = document.querySelector(".mouse-glow");
+            const elements = document.querySelectorAll(".scroll-reveal");
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                { threshold: 0.14 }
+            );
+            elements.forEach((element) => observer.observe(element));
 
-      // Hide the popup
-      popup.style.display = 'none';
+            const navToggle = document.querySelector(".nav-toggle");
+            const navbar = document.querySelector(".navbar");
+            navToggle.addEventListener("click", function () {
+                const expanded = navToggle.getAttribute("aria-expanded") === "true";
+                navToggle.setAttribute("aria-expanded", String(!expanded));
+                navbar.classList.toggle("open");
+            });
 
-      // Clear the iframe source
-      iframe.src = '';
-    }
+            navbar.querySelectorAll("a").forEach((link) => {
+                link.addEventListener("click", function () {
+                    navbar.classList.remove("open");
+                    navToggle.setAttribute("aria-expanded", "false");
+                });
+            });
 
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const elements = document.querySelectorAll(".scroll-reveal");
-  
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
+            const sections = document.querySelectorAll("main section[id]");
+            const navLinks = document.querySelectorAll(".navbar a");
+            const sectionObserver = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (!entry.isIntersecting) {
+                            return;
+                        }
+                        navLinks.forEach((link) => {
+                            link.classList.toggle("active", link.getAttribute("href") === `#${entry.target.id}`);
+                        });
+                    });
+                },
+                { threshold: 0.55 }
+            );
+            sections.forEach((section) => sectionObserver.observe(section));
+
+            if (mouseGlow) {
+                window.addEventListener("pointermove", (event) => {
+                    mouseGlow.style.left = `${event.clientX}px`;
+                    mouseGlow.style.top = `${event.clientY}px`;
+                });
             }
-          });
-        },
-        { threshold: 0.1 }
-      );
-  
-      elements.forEach((element) => {
-        observer.observe(element);
-      });
-    });
-  </script>
-  
+
+            document.querySelectorAll(".magnetic").forEach((button) => {
+                button.addEventListener("mousemove", (event) => {
+                    const box = button.getBoundingClientRect();
+                    const x = event.clientX - box.left - box.width / 2;
+                    const y = event.clientY - box.top - box.height / 2;
+                    button.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px)`;
+                });
+                button.addEventListener("mouseleave", () => {
+                    button.style.transform = "translate(0, 0)";
+                });
+            });
+
+            document.getElementById("year").textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 
 </html>
