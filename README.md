@@ -71,4 +71,4 @@ cd Portfolio2.0
 
 ## Preview
 
-![Portfolio Preview](./media/Screenshot_23-9-2024_164620_nandatadepalli.github.io.jpeg)
+![Portfolio Preview](./media/image.png)
